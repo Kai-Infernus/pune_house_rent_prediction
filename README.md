@@ -7,4 +7,4 @@
 
 Launch the web app:
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/kai-infernus/pune_house_rent_prediction/app.py/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/kai-infernus/pune_house_rent_prediction/main/app.py)

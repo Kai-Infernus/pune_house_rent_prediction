@@ -1,7 +1,7 @@
 # Pune Rroperty Rent Prediction
 
 <p align="center">
-  <img src="https://drive.google.com/file/d/10of4NnKn6Xu7B2xnRiFGjaZYLIC_Nsi3/view?usp=sharing">
+  <img src="Capture.PNG">
 </p>
 
 - This is a machine learning based model for predicting House rents in Pune.

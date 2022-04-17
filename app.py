@@ -5,8 +5,8 @@ import pandas as pd
 import time
 
 
-model = pickle.load(open("RentPredictionProject\pune_rent.pkl", 'rb'))
-data = pd.read_csv('RentPredictionProject\Cleaned_data.csv')
+model = pickle.load(open("pune_rent.pkl", 'rb'))
+data = pd.read_csv('Cleaned_data.csv')
 
 
 seller_list = sorted(data['seller_type'].unique())

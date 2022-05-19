@@ -13,7 +13,7 @@ seller_list = sorted(data['seller_type'].unique())
 localities = sorted(data['locality'].unique())
 prop_list = sorted(data['property_type'].unique())
 furnish_list = sorted(data['furnish_type'].unique())
-layout_list = sorted(data['layout_type'].unique())
+# layout_list = sorted(data['layout_type'].unique())
 bed_list = sorted(data['bedroom'].unique())
 bath_list = sorted(data['bathroom'].unique())
 
@@ -49,7 +49,7 @@ def main():
 
     bedroom_choice = st.selectbox(label='Select number of Bedrooms', options=bed_list)
 
-    layout_choice = st.selectbox(label='Select your Layout Type', options=layout_list)
+    layout_choice = 'BHK'
 
     prop_choice = st.selectbox(label='Select your Property Type', options=prop_list)
 
@@ -78,11 +78,8 @@ def main():
         '...and we\'re done!'
 
         output = predict_price(seller_choice,bedroom_choice,layout_choice,prop_choice,locality_choice,area_choice,furnish_choice,bath_choice)
-        if output in range(40000):
-            st.success('₹ {} INR'.format(round(output)))
-        else:
-            output = "Invalid Parameters: Please check your inputs."
-            st.error(output)
+        st.success('₹ {} INR'.format(round(output)))
+       
         # st.markdown("<h5 style='text-align: left;'> INR </h5>", unsafe_allow_html=True)
 
 if __name__=='__main__':

@@ -13,7 +13,7 @@ seller_list = sorted(data['seller_type'].unique())
 localities = sorted(data['locality'].unique())
 prop_list = sorted(data['property_type'].unique())
 furnish_list = sorted(data['furnish_type'].unique())
-# layout_list = sorted(data['layout_type'].unique())
+layout_list = sorted(data['layout_type'].unique())
 bed_list = sorted(data['bedroom'].unique())
 bath_list = sorted(data['bathroom'].unique())
 
@@ -79,7 +79,6 @@ def main():
 
         output = predict_price(seller_choice,bedroom_choice,layout_choice,prop_choice,locality_choice,area_choice,furnish_choice,bath_choice)
         st.success('₹ {} INR'.format(round(output)))
-       
         # st.markdown("<h5 style='text-align: left;'> INR </h5>", unsafe_allow_html=True)
 
 if __name__=='__main__':

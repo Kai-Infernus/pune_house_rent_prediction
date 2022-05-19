@@ -5,7 +5,7 @@ import pandas as pd
 import time
 
 
-model = pickle.load(open("pune_rent.pkl", 'rb'))
+model = pickle.load(open("pune_rent (1).pkl", 'rb'))
 data = pd.read_csv('Cleaned_data.csv')
 
 
